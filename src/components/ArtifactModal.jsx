@@ -7,7 +7,7 @@ function ArtifactModal({ artifact, onClose }) {
     <div className="modal" style={{
         position: "fixed",
         top: 0, left: 0, right: 0, bottom: 0,
-        backgroundColor: "rgba(0,0,0,0.7)",
+        backgroundColor: "rgba(0,0,0,0.10)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center"
