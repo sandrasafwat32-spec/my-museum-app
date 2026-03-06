@@ -2,7 +2,6 @@ import { useState } from "react";
 import { artifacts } from "../data";
 import ArtifactCard from "../components/ArtifactCard";
 import { Link } from "react-router-dom";
-// تأكدي من تثبيت المكتبة: npm install react-icons
 import { FaFilter } from "react-icons/fa"; 
 
 export default function Home() {
@@ -14,16 +13,16 @@ export default function Home() {
     alert(`You clicked on ${artifact.name}!`);
   };
 
-  // مصفوفة الممالك لتوليد الأزرار ديناميكياً وتجنب أخطاء الكتابة
+
   const kingdoms = ["all", "Old Kingdom", "Middle Kingdom", "New Kingdom", "Greco-Roman Period", "Ptolemaic Period"];
 
-  // منطق الفلترة
+ 
   const filteredArtifacts = artifacts.filter((artifact) => {
     const matchesSearch = artifact.name
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
 
-    // تأكدي أن artifact.kingdom في ملف data.js مطابق تماماً لهذه النصوص
+ 
     const matchesKingdom =
       kingdomFilter === "all" || artifact.kingdom === kingdomFilter;
 
@@ -41,7 +40,7 @@ export default function Home() {
     backgroundImage: 'url("/images/wallpaper.jpg")',
     backgroundSize: "cover",
     backgroundPosition: "center",
-    backgroundAttachment: "fixed", // لجعل الخلفية ثابتة وشكلها أفخم
+    backgroundAttachment: "fixed", 
     boxSizing: "border-box",
   };
 
@@ -66,7 +65,7 @@ export default function Home() {
           Welcome to the Museum Experience
         </h1>
 
-        {/* حقل البحث */}
+      
         <input
           type="text"
           placeholder="Search for an artifact..."
@@ -87,7 +86,7 @@ export default function Home() {
           }}
         />
 
-        {/* قسم الفلتر بالأيقونة */}
+      
         <div style={{ marginBottom: "40px", display: "flex", justifyContent: "center", alignItems: "center", flexWrap: "wrap", gap: "10px" }}>
           <FaFilter style={{ color: "gold", marginRight: "10px", fontSize: "1.2rem" }} />
           {kingdoms.map((k) => (
@@ -101,17 +100,17 @@ export default function Home() {
           ))}
         </div>
 
-{/* شبكة العرض المعدلة */}
+
 <div
   style={{
     display: "grid",
-    // هنا بنقوله يعمل 4 أعمدة قد بعض بالظبط
+  
     gridTemplateColumns: "repeat(3, 1fr)", 
     gap: "30px",
     padding: "20px",
-    width: "80%", // عشان نضمن مساحة كافية للـ 4 كروت
+    width: "80%", 
     maxWidth: "1200px",
-    margin: "0 auto", // سنترة الشبكة في نص الصفحة
+    margin: "0 auto",
   }}
         >
 {filteredArtifacts.map((artifact) => (
@@ -136,7 +135,7 @@ export default function Home() {
   ))}
 </div>
 
-        {/* رسالة في حال عدم وجود نتائج */}
+       
         {filteredArtifacts.length === 0 && (
           <p style={{ marginTop: "50px", fontSize: "1.2rem", opacity: 0.8 }}>
             No artifacts found in this kingdom...

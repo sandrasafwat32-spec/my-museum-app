@@ -13,7 +13,7 @@ export default function ArtifactDetails() {
       minHeight: "100vh", 
       backgroundColor: "#0a0a0a", 
       color: "white",
-      padding: "20px" // رجعنا البادينج طبيعي
+      padding: "20px"
     }}>
       
       <div style={{ 
@@ -24,7 +24,7 @@ export default function ArtifactDetails() {
         alignItems: "center" 
       }}>
         
-        {/* الحل هنا: استخدمنا marginTop للعنوان فقط عشان ينزل تحت النيف بار */}
+        {/* marginTop للعنوان بس عشان ينزل تحت النيف بار */}
         <h1 style={{ 
           fontSize: "3rem", 
           color: "gold", 
@@ -35,7 +35,7 @@ export default function ArtifactDetails() {
           {artifact.name}
         </h1>
 
-        {/* حاوية الموديل */}
+        {/* مكان اللي شايل الموديل */}
         <div style={{ 
           width: "100%", 
           height: "600px", 
@@ -43,7 +43,7 @@ export default function ArtifactDetails() {
           borderRadius: "30px",
           border: "1px solid rgba(255, 215, 0, 0.2)",
           marginBottom: "30px",
-          display: "flex", // عشان نضمن السنترة جوه
+          display: "flex", //عشان نضمن السنترة جوا
           justifyContent: "center",
           alignItems: "center"
         }}>
@@ -55,7 +55,7 @@ export default function ArtifactDetails() {
             shadow-intensity="2"
             exposure="1.2"
             environment-image="neutral"
-            style={{ width: "95%", height: "95%" }} // سيبنا مساحة صغيرة جوه الحاوية
+            style={{ width: "95%", height: "95%" }} 
           >
           </model-viewer>
         </div>

@@ -1,23 +1,22 @@
 export default function ArtifactCard({ artifact }) {
-  // شيلنا الـ useNavigate والـ model-viewer عشان نخليهم في صفحة الـ Details
   return (
     <div
       className="artifact-card"
       style={{
-        border: "1px solid rgba(255, 215, 0, 0.3)", // إطار ذهبي رقيق
+        border: "1px solid rgba(255, 215, 0, 0.3)", 
         borderRadius: "15px",
         padding: "0", 
         margin: "10px",
-        width: "280px", // العرض اللي طلبتيه (أعرض من الأول)
+        width: "280px", 
         textAlign: "center",
-        backgroundColor: "rgba(0, 0, 0, 0.6)", // خلفية فخمة
+        backgroundColor: "rgba(0, 0, 0, 0.6)",
         overflow: "hidden", 
-        boxShadow: "0 8px 20px rgba(0,0,0,0.6)", // ظل أقوى عشان يبرز الكارد
+        boxShadow: "0 8px 20px rgba(0,0,0,0.6)", 
         color: "white",
         transition: "transform 0.3s ease"
       }}
     >
-      {/* المكان المعروض فيه التمثال (عرضناه وخلينا طوله مناسب) */}
+
       <div style={{ width: "100%", height: "300px", backgroundColor: "#000" }}>
         <img
           src={artifact.image}
@@ -25,13 +24,13 @@ export default function ArtifactCard({ artifact }) {
           style={{ 
             width: "100%", 
             height: "100%", 
-            objectFit: "cover", // أهم خاصية عشان الصورة تملى المساحة العريضة
+            objectFit: "cover", 
             display: "block"
           }}
         />
       </div>
 
-      {/* منطقة النصوص تحت الصورة */}
+      
       <div style={{ padding: "15px" }}>
         <h3 style={{ margin: "5px 0", color: "gold", fontSize: "1.3rem" }}>
           {artifact.name}
