@@ -4,7 +4,7 @@ export const artifacts = [
     name: "Akhenaten",
     kingdom: "New Kingdom",
     material: "Sandstone",
-    image: "/images/statue1.jpeg",
+    image: "/images/Akhenaten.jpeg",
     modelPath: "/models/akhenaten.glb",
 
   },
@@ -13,7 +13,7 @@ export const artifacts = [
     name: "Khafre",
     kingdom: "Old Kingdom",
     material: "Anorthosite Gneiss",
-    image: "/images/nefertiti.webp",
+    image: "/images/Khafre.jpeg",
         modelPath: "/models/khafre.glb",
 
 
@@ -23,7 +23,7 @@ export const artifacts = [
     name: "High Priest Ramessesnakht",
     kingdom: "New Kingdom",
     material: "Granite",
-    image: "/images/nefertiti.webp",
+    image: "/images/High_Priest_Ramessesnakht.jpeg",
         modelPath: "/models/ramessesnakht.glb",
 
 
@@ -33,7 +33,7 @@ export const artifacts = [
     name: "God Serapis",
     kingdom: "Greco-Roman Period",
     material: "Egyptian Alabaster",
-    image: "/images/nefertiti.webp",
+    image: "/images/God_Serapis.jpeg",
         modelPath: "/models/godserapis.glb",
 
 
@@ -43,7 +43,7 @@ export const artifacts = [
     name: "Hor Son Of Hor",
     kingdom: "Ptolemaic Period",
     material: "Granite",
-    image: "/images/nefertiti.webp",
+    image: "/images/Hor_Son_Hor.jpeg",
         modelPath: "/models/horsonhor.glb",
 
 
@@ -53,7 +53,7 @@ export const artifacts = [
     name: "Scribe Statue",
     kingdom: "Middle Kingdom",
     material: "Limestone",
-    image: "/images/nefertiti.webp",
+    image: "/images/Scribe_Statue.jpeg",
         modelPath: "/models/scribestatue.glb",
 
 
@@ -63,7 +63,7 @@ export const artifacts = [
     name: "Khakaureseneb",
     kingdom: "Middle Kingdom",
     material: "Quartzite",
-    image: "/images/nefertiti.webp",
+    image: "/images/Khakaureseneb.jpeg",
         modelPath: "/models/Khakaureseneb.glb",
 
 
