@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#0d0a06"/>
+  
+  <!-- A left stroke -->
+  <line x1="4" y1="62" x2="32" y2="6" stroke="#d4af5a" stroke-width="4" stroke-linecap="round"/>
+  <!-- A right stroke -->
+  <line x1="60" y1="62" x2="32" y2="6" stroke="#d4af5a" stroke-width="4" stroke-linecap="round"/>
+  <!-- A crossbar -->
+  <line x1="16" y1="44" x2="48" y2="44" stroke="#d4af5a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Eye almond -->
+  <path d="M14 35 Q32 22 50 35 Q32 48 14 35Z" stroke="#d4af5a" stroke-width="1.2" fill="rgba(212,175,90,0.1)"/>
+  <!-- iris -->
+  <circle cx="32" cy="35" r="7.5" stroke="#d4af5a" stroke-width="1.2" fill="none"/>
+  <!-- pupil -->
+  <circle cx="32" cy="35" r="3.5" fill="#d4af5a"/>
+  <!-- inner dark -->
+  <circle cx="32" cy="35" r="1.5" fill="#0d0a06"/>
+  <!-- kohl tail -->
+  <path d="M42 39 Q49 46 56 43" stroke="#d4af5a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+</svg>
