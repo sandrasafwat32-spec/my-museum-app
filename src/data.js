@@ -6,6 +6,7 @@ export const artifacts = [
     material: "Sandstone",
     image: "/images/Akhenaten.webp",
     modelPath: "/models/akhenaten.glb",
+     audioPath: "/audios/Akhenaten.mp3",
 
   },
   {

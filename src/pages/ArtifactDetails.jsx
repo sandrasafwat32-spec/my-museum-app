@@ -68,6 +68,7 @@ export default function ArtifactDetails() {
       flex-direction: column;
       align-items: center;
       gap: 28px;
+      align-self: flex-start;
     }
 
     .detail-model-box {
@@ -84,12 +85,12 @@ export default function ArtifactDetails() {
       overflow: hidden;
     }
 
-    .detail-model-footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 14px;
-      width: 100%;
+    .detail-meta {
+      text-align: center;
+      color: gold;
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      letter-spacing: 2px;
     }
 
     .ar-btn {
@@ -117,17 +118,8 @@ export default function ArtifactDetails() {
       transform: translateY(-2px);
     }
 
-    .detail-meta {
-      text-align: center;
-      color: gold;
-      font-family: 'Cinzel', serif;
-      font-size: 1rem;
-      letter-spacing: 2px;
-    }
-
     @media (max-width: 768px) {
       .detail-page {
-      display: flex;
         flex-direction: column;
         padding: 100px 5% 60px;
         gap: 30px;
@@ -145,15 +137,10 @@ export default function ArtifactDetails() {
       }
 
       .detail-model-col {
-        position: sticky;
-        top: 120px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 28px;
-        align-self: flex-start;
-        height: 80vh;
-        
+        position: relative;
+        top: 0;
+        height: auto;
+        width: 100%;
       }
 
       .detail-model-box {
@@ -164,8 +151,14 @@ export default function ArtifactDetails() {
       }
 
       .ar-btn {
+        display: flex;
         font-size: 0.7rem;
         padding: 10px 22px;
+      }
+
+      .detail-meta {
+        margin-top: 8px;
+        font-size: 0.85rem;
       }
     }
   `;
@@ -181,7 +174,7 @@ export default function ArtifactDetails() {
 
           <audio
             ref={audioRef}
-            src={artifact.audioPath || "/audio/sample.mp3"}
+            src={artifact.audioPath}
             onTimeUpdate={handleTimeUpdate}
             controls
             style={{ marginBottom: "20px", width: "100%", opacity: 0.5 }}
@@ -225,8 +218,7 @@ export default function ArtifactDetails() {
             />
           </div>
 
-          {/* الزرار برا الـ model-viewer */}
-          <div className="detail-model-footer">
+          <div className="detail-model-footer" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px", width: "100%" }}>
             <button className="ar-btn" onClick={handleARClick}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                 <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#1a1200" strokeWidth="1.8" strokeLinejoin="round"/>
